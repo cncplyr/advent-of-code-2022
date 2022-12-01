@@ -1,5 +1,6 @@
 package com.cncplyr.aoc2022.day01
 
+import com.cncplyr.aoc2022.Day
 import com.cncplyr.aoc2022.util.getFile
 
 fun main() {
@@ -10,9 +11,7 @@ fun main() {
     day1.part2()
 }
 
-class Day01 {
-    private var inputFilename: String = "day01/input.txt"
-
+class Day01 : Day(1) {
     fun part1() {
         println("Part 1")
 
@@ -22,7 +21,7 @@ class Day01 {
         println("Answer: $answer")
     }
 
-    fun part2(){
+    fun part2() {
         println("Part 2")
 
         val blocks = this.countElfCalories(inputFilename)
